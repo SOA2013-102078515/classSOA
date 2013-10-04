@@ -1,0 +1,75 @@
+classSOA-Journal (for Linux, tryRuby, RoR)
+
+------------Linux command note--------------
+ls -a            #list all file&folder
+
+ls --color       #color file&folder
+
+cd 		 #change directory
+
+cd .. 		 #change to parent directory
+
+mkdir 		 #create a new folder
+
+rmdir            #remove folder
+
+vi		 #text editor(i:for insert)
+                 #           (q:quit)
+                 #           (wq:save & quit  )
+
+cp A B		 # copy from A to B
+
+clear 		 #clear the screem
+-------------git instructions----------
+git init                #init a buffer
+
+git add  A              #add the thing(A) you want to push on github
+
+git commit -m "ABC"     #commit
+
+git remote add origin https://github.com/SOA2013-102078515/classSOA  #tell it your destination
+
+git push -u origin master     #push 
+
+------------tryRuby note------------
+
+"Arvin".reverse  -->  nivrA	  #reverse the string(Arvin)
+
+"Str".length 			  #check out the length of the string
+
+to_s                              # transform type to strings
+
+to_i                              # transform type to integers 
+
+to_a                              # transform type to arrays
+
+[num2, num1, num3].max	 	  #find out who is the maximun number of the array
+
+[num2, num1, num3].sort           #sort an array
+
+Class                             #def of class,class explain object
+	
+Accessor                          #def of accessor,object variables which can be used outside the object
+	
+Instance variable                 #def of Instance variable,variable using for accessors when inside the object
+
+Time.now			  #show what time is it now
+
+def load_comics( path )		  #create a method call load_comics
+				
+require 'popup'			  #like what you use ,you need to import it (uhh..like jave import?)
+
+#The last chellenge code:
+
+Popup.make­ do                   
+	h1 "Arvi­n's Blog"­         #level 1 title
+	blog.each do |entr­y|      #set every record in blog as a variable
+		h2 entry­.title
+		p entry­.time      #p for paragraph  , print the time
+		p entry­.fulltext  
+		end
+	end
+
+
+
+
