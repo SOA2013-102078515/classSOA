@@ -71,27 +71,19 @@ Popup.make­ do
 	end
 -------------------SOA lab hour 10/9---------------------
 SOA notes:
-nums.index(6)                              ＃6在哪
+nums.index(6)     ＃6在哪
 
-nums.select{ |a| a>4}                       ＃印出大於4的值
+nums.select{ |a| a>4}    ＃印出大於4的值
 
-nums.map{ |a| a>4}                          #判斷是否超過4
-nums.map{|a|a*2}                            #各element*2
+nums.map{ |a| a>4}      #判斷是否超過4
+nums.map{|a|a*2}        #各element*2
 
 
-nums.reduce(:+)                             #全部相加
+nums.reduce(:+)             #全部相加
 nums.reduce{|a,b| a+b}   #同上
 
 nums.reduce{|a,b| a.to_s +"-" +b.to_s}     #2-4-6-8
 
-hash
-grades = {"arvin" => :A_plus}              #assign the value to the key
-grades["abc"]=:A                           #add to table 
-grades.to_a                                #turn grade into an array
-grades_array[2][0]                         #show the third element and the first value
 
-new_grades={}
-grades_array.map{|grade|new_grades[grade[0]=grade[1]]}   
- 
 
 

@@ -1,0 +1,30 @@
+classSOA-Journal (for rails)
+
+------------Ruby on Rails note------------
+rails new ABC                  #create a ruby project named ABC
+  
+bundle install                 #bundle the gem u write in the gemfile
+ 
+rails s == rails server        # to start the server
+
+rails c == rails console       # like irb, for sqlite command
+
+rake routes                    # list all url 
+
+    movies GET    /movies(.:format)          movies#index
+           POST   /movies(.:format)          movies#create
+ new_movie GET    /movies/new(.:format)      movies#new
+edit_movie GET    /movies/:id/edit(.:format) movies#edit
+     movie GET    /movies/:id(.:format)      movies#show
+           PUT    /movies/:id(.:format)      movies#update
+           DELETE /movies/:id(.:format)      movies#destroy
+      root        /                          :controller#:action
+
+
+rake db:migrate                # create table 
+
+
+rake db:rollback               # undo  migration
+bundle exec rake db:rollback STEP=15      #undo 15 times
+
+rake db:seed                   # create all records which written in seed.rb
