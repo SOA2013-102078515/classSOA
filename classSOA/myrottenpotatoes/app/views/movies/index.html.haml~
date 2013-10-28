@@ -1,6 +1,10 @@
 -#  This file is app/views/movies/index.html.haml
 %h1 All Movies
- 
+- if moviegoer_signed_in?
+  = link_to 'log_out', destroy_moviegoer_session_path, :method => 'delete'
+- else
+  = link_to 'login', new_moviegoer_session_path
+
 %table#movies
   %thead
     %tr
