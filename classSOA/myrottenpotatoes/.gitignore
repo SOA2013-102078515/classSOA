@@ -14,4 +14,3 @@
 /log/*.log
 /tmp
 # Ignore facebook
-/config/initializers/devise.rb

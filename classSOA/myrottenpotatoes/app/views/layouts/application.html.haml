@@ -8,16 +8,14 @@
 
  
   %body
+    - if moviegoer_signed_in?
+      = link_to 'log_out', destroy_moviegoer_session_path, :method => 'delete'
+    - else
+      = link_to 'login', new_moviegoer_session_path
 
+    -# this goes just inside %body:
+    - if flash[:notice]
+      #notice.message= flash[:notice]
+    - elsif flash[:warning]
+      #warning.message= flash[:warning]
     = yield
-
-- if moviegoer_signed_in?
-  = link_to 'log_out', destroy_moviegoer_session_path, :method => 'delete'
-- else
-  = link_to 'login', new_moviegoer_session_path
-
--# this goes just inside %body:
-- if flash[:notice]
-  #notice.message= flash[:notice]
-- elsif flash[:warning]
-  #warning.message= flash[:warning]
